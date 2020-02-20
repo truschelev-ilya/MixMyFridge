@@ -65,8 +65,13 @@ form {
 }
 
 h2 {
-  paddin
+  padding-top: 20px;
 }
+
+.spoiler {
+  display: none;
+}
+
 @media (pointer: coarse) and (hover: none) {
   header {
     background: src('video/background.mp4') black no-repeat center center scroll;
