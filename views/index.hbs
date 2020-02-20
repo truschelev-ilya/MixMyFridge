@@ -1,0 +1,33 @@
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="video/background.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Mix your fridge</h1>
+        <p class="lead mb-0">Cook your own</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container h-100">
+
+</div>
+<br>
+<button id="mix" type="button" class="btn btn-primary btn-lg btn-block">Mix my fridge</button>
+{{!-- <div class="container mix-form"> --}}
+  <h2>Specify your products:</h2>
+  <div class="input-group mb-3">
+    {{!-- <form> --}}
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary add" type="button" id="button-addon2">Add</button>
+      </div>
+    {{!-- </form> --}}
+  </div>
+{{!-- </div> --}}
+<button id="random" type="button" class="btn btn-primary btn-lg btn-block">Get random dish</button>
