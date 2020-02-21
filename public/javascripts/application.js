@@ -1,18 +1,30 @@
 const add = document.querySelector('.add')
-const list = document.querySelector('.list')
+const list = document.querySelector('.lists')
 const inputs = document.querySelector('.inputs')
 const mixMyFridge = document.querySelector('#mix')
-const spoiler = document.querySelector('.spoiler')
+const find = document.querySelector('#find')
+const spoilerfind = document.querySelector('.spoilerfind')
+const spoilermix = document.querySelector('.spoilermix')
 const submitButton = document.querySelector('.submitbutton')
+
+find.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (spoilerfind.style.display === '' || spoilerfind.style.display === 'none') {
+    spoilerfind.style.display = 'block'
+  } else {
+    spoilerfind.style.display = 'none'
+  }
+})
 
 mixMyFridge.addEventListener('click', (e) => {
   e.preventDefault();
-  if (spoiler.style.display === '' || spoiler.style.display === 'none') {
-    spoiler.style.display = 'block'
+  if (spoilermix.style.display === '' || spoilermix.style.display === 'none') {
+    spoilermix.style.display = 'block'
   } else {
-    spoiler.style.display = 'none'
+    spoilermix.style.display = 'none'
   }
 })
+
 
 // document.querySelector('#mix').addEventListener('click', (element) => {
 //   element.preventDefault()
