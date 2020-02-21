@@ -7,7 +7,7 @@ const spoilerfind = document.querySelector('.spoilerfind')
 const spoilermix = document.querySelector('.spoilermix')
 const submitButton = document.querySelector('.submitbutton')
 
-find.addEventListener('click', (e) => {
+find && find.addEventListener('click', (e) => {
   e.preventDefault();
   if (spoilerfind.style.display === '' || spoilerfind.style.display === 'none') {
     spoilerfind.style.display = 'block'
@@ -16,7 +16,7 @@ find.addEventListener('click', (e) => {
   }
 })
 
-mixMyFridge.addEventListener('click', (e) => {
+mixMyFridge && mixMyFridge.addEventListener('click', (e) => {
   e.preventDefault();
   if (spoilermix.style.display === '' || spoilermix.style.display === 'none') {
     spoilermix.style.display = 'block'
@@ -31,7 +31,7 @@ mixMyFridge.addEventListener('click', (e) => {
 
 // })
 
-add.addEventListener('click', (e) => {
+add && add.addEventListener('click', (e) => {
   e.preventDefault();
   let completedInput = document.querySelector(".new")
   if(completedInput.value.length>0){
@@ -43,15 +43,15 @@ add.addEventListener('click', (e) => {
   completedInput.value = ""
 })
 
-document.addEventListener('submit', async (e) => {
-  console.log(e.target.ingredients)
-  const response = await fetch('mix', {
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-})
+// document.addEventListener('submit', async (e) => {
+//   console.log(e.target.ingredients)
+//   const response = await fetch('mix', {
+//     method: "POST",
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   })
+// })
 
 // document.querySelector('#random').addEventListener('click', async (e) => {
 //   e.preventDefault()

@@ -7,9 +7,19 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/mix', (req, res, next) => {
-  const { ingredient } = req.body //array of ingredients
-  // console.log(ingredient);
+router.post('/mix', async (req, res, next) => {
+  const { ingredient } = await req.body //array of ingredients
+  console.log(ingredient);
+  const allIngs = await ingredient.join(",");
+  console.log(allIngs);
+  
+  const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${allIngs}`)
+  const data = await response.json()
+  console.log(data);
+  
+  const meal = data.meals[0];
+  res.render('find', { meal })
+
 
 })
 
@@ -23,13 +33,13 @@ router.get('/random', async (req, res, next) => {
 
 router.post('/findform', async (req, res, next) => {
 const {mealName} = req.body;
-console.log(mealName);
+// console.log(mealName);
 
   const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
   const data = await response.json()
-  console.log(data);
+  // console.log(data);
   const meal = data.meals[0];
-  res.render('random', { meal })
+  res.render('find', { meal })
   // console.log(meal);
 })
 
