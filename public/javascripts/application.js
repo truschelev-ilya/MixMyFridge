@@ -25,12 +25,6 @@ mixMyFridge && mixMyFridge.addEventListener('click', (e) => {
   }
 })
 
-
-// document.querySelector('#mix').addEventListener('click', (element) => {
-//   element.preventDefault()
-
-// })
-
 add && add.addEventListener('click', (e) => {
   e.preventDefault();
   let completedInput = document.querySelector(".new")
@@ -42,28 +36,3 @@ add && add.addEventListener('click', (e) => {
   }
   completedInput.value = ""
 })
-
-// document.addEventListener('submit', async (e) => {
-//   console.log(e.target.ingredients)
-//   const response = await fetch('mix', {
-//     method: "POST",
-//     headers: {
-//       'Content-Type': 'application/json'
-//     }
-//   })
-// })
-
-// document.querySelector('#random').addEventListener('click', async (e) => {
-//   e.preventDefault()
-
-// const response = await fetch('/random', {
-//   method: 'GET',
-//   headers: {
-//     'Content-Type': 'application/json' 
-//   }
-// })
-
-//   // const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php')
-//   // const data = await response.json()
-//   // const meal = data.meals[0];
-// })

@@ -14,7 +14,6 @@
     </div>
   </div>
 </header>
-
 <div class="container h-100">
 
 </div>
@@ -23,9 +22,7 @@
 <br>
 <button id="find" type="button" class="btn btn-primary btn-lg btn-block">Find</button>
 <div class="spoilerfind">
-
   <h2 align="center">Find meal by name:</h2>
-
   <form name="findform" class="list" method="post" action="/findform">
     <div class="inputss">
       <input type="text" name="mealName" class="form-control" placeholder="Meal name" aria-label="Recipient's username"
@@ -35,21 +32,11 @@
       <input type="submit" class="btn btn-primary btn-sm" value="Find">
     </div>
   </form>
-
-  {{!-- <form name="formm" class="list" method="POST" action="/mix">
-<div class="inputs"></div>
-<div class="submitbutton"></div>
-</form> --}}
-
 </div>
 <br>
-
-
 <button id="mix" type="button" class="btn btn-primary btn-lg btn-block">Mix my fridge</button>
 <div class="spoilermix">
-
   <h2 align="center">Specify your products:</h2>
-
   <div class="input-group mb-3">
     <input type="text" class="form-control new" placeholder="Ingredient" aria-label="Recipient's username"
       aria-describedby="button-addon2">
@@ -57,12 +44,10 @@
       <button class="btn btn-outline-secondary add" type="button" id="button-addon2">Add</button>
     </div>
   </div>
-
   <form name="formm" class="list lists" method="POST" action="/mix">
     <div class="inputs"></div>
     <div class="submitbutton"></div>
   </form>
-
 </div>
 <br>
 <form method="GET" action="/random">
