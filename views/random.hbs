@@ -4,9 +4,7 @@
     <source src="video/background.mp4" type="video/mp4">
   </video>
   <div class="container h-100">
-    <div>
-      <a href="/">Home</a>
-    </div>
+    <a href="/">Home</a>
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
         <h1 class="display-3">Mix your fridge</h1>
@@ -16,27 +14,44 @@
   </div>
 </header>
 
-<div class="container h-100">
+<div class="container h-100 meall">
+  <div class="mealcont">
+    <div class="mealhead">
+      <div>
+        <img width="300" src="{{meal.strMealThumb}}">
+      </div>
+      <div class="mealname">
+        <h2>{{meal.strMeal}}</h2>
+        <p>Category: {{meal.strCategory}}</p>
+        <p>Area: {{meal.strArea}}</p>
 
+      </div>
+    </div>
+    <div class="mealdescr">
+      <h3 align="center">How to Cook</h3>
+      <p>{{meal.strInstructions}}</p>
+    </div>
+  </div>
 </div>
+
 <br>
 <button id="mix" type="button" class="btn btn-primary btn-lg btn-block">Mix my fridge</button>
 <div class="spoiler">
 
   <h2 align="center">Specify your products:</h2>
-  
-<div class="input-group mb-3">
+
+  <div class="input-group mb-3">
     <input type="text" class="form-control new" placeholder="Ingredient" aria-label="Recipient's username"
       aria-describedby="button-addon2">
     <div class="input-group-append">
       <button class="btn btn-outline-secondary add" type="button" id="button-addon2">Add</button>
     </div>
-</div>
+  </div>
 
-<form name="formm" class="list" method="POST" action="/mix">
-<div class="inputs"></div>
-<div class="submitbutton"></div>
-</form>
+  <form name="formm" class="list" method="POST" action="/mix">
+    <div class="inputs"></div>
+    <div class="submitbutton"></div>
+  </form>
 
 </div>
 <br>

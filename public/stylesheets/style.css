@@ -68,8 +68,63 @@ h2 {
   padding-top: 20px;
 }
 
+h3 {
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
 .spoiler {
   display: none;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.list{
+margin-top: 3px;
+}
+
+.submitbutton {
+display: flex;
+justify-content: flex-end;
+}
+
+.btn-sm {
+width: 10%;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.meall {
+  margin: 5% 10% 5% 10%;
+  background-color: rgba(236, 236, 236, 0.363);
+  border-radius: 15px;
+}
+
+.mealcont {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  margin: 0 3% 0 3%;
+}
+
+.mealhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: start
+}
+
+.mealname {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.mealdescr {
+margin-top: 5%;
 }
 
 @media (pointer: coarse) and (hover: none) {
