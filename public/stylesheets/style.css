@@ -85,6 +85,15 @@ h3 {
   margin: auto;
 }
 
+.err {
+  margin: auto;
+  width: 50vh;
+  background-color: rgb(209, 51, 51);
+  border-radius: 5px;
+  border: red solid 1px;
+  text-align: center;
+}
+
 .spoilerfind {
   display: none;
 }
