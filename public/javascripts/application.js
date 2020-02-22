@@ -25,6 +25,7 @@ mixMyFridge && mixMyFridge.addEventListener('click', (e) => {
   }
 })
 
+
 add && add.addEventListener('click', (e) => {
   e.preventDefault();
   let completedInput = document.querySelector(".new")
@@ -36,3 +37,4 @@ add && add.addEventListener('click', (e) => {
   }
   completedInput.value = ""
 })
+
