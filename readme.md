@@ -1,4 +1,4 @@
-## [Mix My Fridge] (https://mixmyfridge.herokuapp.com/)
+## [Mix My Fridge](https://mixmyfridge.herokuapp.com/)
 **Mix My Fridge** - сайт с большой базой блюд и их рецептов, а также с возможностью подобрать рецепт блюда исходя из имеющихся ингредиентов у пользователя.
 ## MVP фунциональность
 * Поиск рецепта по названию блюда.
