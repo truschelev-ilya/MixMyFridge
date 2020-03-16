@@ -1,1 +1,4 @@
-Fridgerator
+Mix My Fridge
+
+'Mix My Fridge' - сайт с большой базой блюд и их рецептов, а также с возможностью подобрать рецепт блюда исходя из имеющихся ингредиентов у пользователя.
+Технологии: JavaScript, Handlebars, Express, MongoDB, Mongoose, Bootstrap.
